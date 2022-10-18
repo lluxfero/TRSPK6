@@ -27,7 +27,7 @@ Console.WriteLine($"{pi.ToString()}\n{dt.ToString()}");
 Console.WriteLine($"{double.Parse(a)}\n{double.Parse(a2)}\n{DateTime.Parse(b)}\n");
 
 
-string s = "Привет, мир, й, ёЁ!\nHello world!\nÁ Ã ä Ü æ © £ ¢ ";
+string s = "Привет, мир, й, ёЁ!\nHello world!\nÁ Ã ä Ü æ © £ ¢\n異體字 异体字\nر ش ث خ ذ ض ظ غ\n";
 File.WriteAllText("textUFT8", s, Encoding.UTF8);
 File.WriteAllText("textUnicode", s, Encoding.Unicode);
 File.WriteAllText("textLatin1", s, Encoding.Latin1);
