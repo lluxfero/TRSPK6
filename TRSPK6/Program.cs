@@ -31,9 +31,14 @@ string s = "Привет, мир, й, ёЁ!\nHello world!\nÁ Ã ä Ü æ © £ 
 File.WriteAllText("textUFT8", s, Encoding.UTF8);
 File.WriteAllText("textUnicode", s, Encoding.Unicode);
 File.WriteAllText("textLatin1", s, Encoding.Latin1);
-File.WriteAllText("textASCII", s, Encoding.ASCII);
+File.WriteAllText("textASCII", s, Encoding.ASCII); 
+File.WriteAllText("textBigEndianUnicode", s, Encoding.BigEndianUnicode);
+File.WriteAllText("textUTF32", s, Encoding.UTF32);
 Console.WriteLine($"UFT8:\n{File.ReadAllText("textUFT8", Encoding.UTF8)}\n");
 Console.WriteLine($"Unicode:\n{File.ReadAllText("textUnicode", Encoding.Unicode)}\n");
 Console.WriteLine($"Latin1:\n{File.ReadAllText("textLatin1", Encoding.Latin1)}\n");
 Console.WriteLine($"ASCII:\n{File.ReadAllText("textASCII", Encoding.ASCII)}\n");
+Console.WriteLine($"BigEndianUnicode:\n{File.ReadAllText("textBigEndianUnicode", Encoding.BigEndianUnicode)}\n");
+Console.WriteLine($"UTF32:\n{File.ReadAllText("textUTF32", Encoding.UTF32)}\n");
+
 
